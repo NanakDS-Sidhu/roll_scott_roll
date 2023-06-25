@@ -68,8 +68,8 @@ export default function Home() {
     <>
 
     <h1 className='text-8xl'> Its Parkour time</h1>
-{loading?"Please wait":  <div className="canvasContainer sticky top-0 h-screen sm:h-96">
-    <canvas ref={canvasRef} className="relative w-full h-screen sm:h-96 bg-teal-300 z-10"></canvas>
+{loading?"Please wait":  <div className="canvasContainer sticky top-0 h-screen">
+    <canvas ref={canvasRef} className="relative w-full h-screen  bg-teal-300 z-10"></canvas>
 
     </div>}
     <div className="h-screen bg-orange-300"></div>
