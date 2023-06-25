@@ -68,11 +68,9 @@ export default function Home() {
     <>
 
     <h1 className='text-8xl'> Its Parkour time</h1>
-{loading?"Please wait":  <div className="canvasContainer sticky top-0 h-screen">
-    <canvas ref={canvasRef} className="relative w-full h-screen bg-teal-300 z-10"></canvas>
-    {scrollRef.current<=133?<div classname="z-20 absolute flex justify-center items-center backdrop-blur-lg bg-black/30">
-      <h1 className="text-8xl text-white">Parkour </h1>
-    </div>:""}
+{loading?"Please wait":  <div className="canvasContainer sticky top-0 h-screen sm:h-96">
+    <canvas ref={canvasRef} className="relative w-full h-screen sm:h-96 bg-teal-300 z-10"></canvas>
+
     </div>}
     <div className="h-screen bg-orange-300"></div>
     <div className="h-screen bg-orange-300"></div>
